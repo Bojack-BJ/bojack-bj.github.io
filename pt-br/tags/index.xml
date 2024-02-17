@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Xiaotong Li</title>
+    <link>http://www.example.com/pt-br/tags/</link>
+    <description>Recent content in Tags on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 04 Jan 2023 11:51:36 +0100</lastBuildDate><atom:link href="http://www.example.com/pt-br/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Códigos curtos</title>
+      <link>http://www.example.com/pt-br/tags/shortcodes/</link>
+      <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
+      
+      <guid>http://www.example.com/pt-br/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

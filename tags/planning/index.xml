@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planning on Xiaotong Li</title>
+    <link>http://www.example.com/tags/planning/</link>
+    <description>Recent content in Planning on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two-stage Multi-UAV Planning Solution Combining A*, Model Predictive Control, and Artificial Potential Field</title>
+      <link>http://www.example.com/projects/multi-uav/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/multi-uav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Formation Transformation and Obstacle Avoidance of Unmanned Vehicles</title>
+      <link>http://www.example.com/projects/dynamic-formation-transformation-and-obstacle-avoidance-of-unmanned-vehicles/</link>
+      <pubDate>Sun, 27 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/dynamic-formation-transformation-and-obstacle-avoidance-of-unmanned-vehicles/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

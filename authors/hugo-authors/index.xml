@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LXT on Xiaotong Li</title>
+    <link>http://www.example.com/authors/hugo-authors/</link>
+    <description>Recent content in LXT on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Jan 2023 01:15:29 +0100</lastBuildDate><atom:link href="http://www.example.com/authors/hugo-authors/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

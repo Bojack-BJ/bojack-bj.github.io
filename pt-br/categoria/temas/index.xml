@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>temas on Xiaotong Li</title>
+    <link>http://www.example.com/pt-br/categoria/temas/</link>
+    <description>Recent content in temas on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 04 Jan 2023 23:21:18 +0100</lastBuildDate><atom:link href="http://www.example.com/pt-br/categoria/temas/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

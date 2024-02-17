@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Xiaotong Li</title>
+    <link>http://www.example.com/authors/</link>
+    <description>Recent content in Authors on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xiaotong Li</title>
+      <link>http://www.example.com/authors/xiaotong-li/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/authors/xiaotong-li/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lone Coder</title>
+      <link>http://www.example.com/authors/lone-coder/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/authors/lone-coder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LXT</title>
+      <link>http://www.example.com/authors/hugo-authors/</link>
+      <pubDate>Thu, 05 Jan 2023 01:15:29 +0100</pubDate>
+      
+      <guid>http://www.example.com/authors/hugo-authors/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

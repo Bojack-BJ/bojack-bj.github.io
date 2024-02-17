@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Xiaotong Li</title>
+    <link>http://www.example.com/series/</link>
+    <description>Recent content in Series on Xiaotong Li</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research Project</title>
+      <link>http://www.example.com/series/research-project/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/series/research-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theme Demo</title>
+      <link>http://www.example.com/series/theme-demo/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/series/theme-demo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
