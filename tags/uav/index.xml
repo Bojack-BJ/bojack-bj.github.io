@@ -16,5 +16,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Bayer Crop Science Co. Ltd., Shanghai, China</title>
+      <link>http://www.example.com/interns/bayer/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/interns/bayer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gradient Enhanced Neural Networks for Optimization of Mars Low Reynold Number Airfoil</title>
+      <link>http://www.example.com/projects/gradient/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/gradient/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BJROBOT Technology Co. Ltd., Beijing, China</title>
+      <link>http://www.example.com/interns/bjrobot-/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/interns/bjrobot-/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

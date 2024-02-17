@@ -113,19 +113,13 @@
     <loc>http://www.example.com/tags/hugo/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/interns/</loc>
-    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.example.com/authors/lone-coder/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/tags/markdown/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/interns/markdown-syntax/</loc>
-    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/markdown-syntax/</loc>
+    <loc>http://www.example.com/templates/markdown-syntax/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/categories/syntax/</loc>
@@ -141,19 +135,16 @@
                 href="http://www.example.com/categories/syntax/"
                 />
   </url><url>
+    <loc>http://www.example.com/templates/</loc>
+    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.example.com/categories/theme-demo/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/series/theme-demo/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/</loc>
-    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/rich-content/</loc>
-    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/rich-content/</loc>
+    <loc>http://www.example.com/templates/rich-content/</loc>
     <lastmod>2023-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/tags/shortcodes/</loc>
@@ -169,50 +160,38 @@
                 href="http://www.example.com/tags/shortcodes/"
                 />
   </url><url>
-    <loc>http://www.example.com/interns/more-rich-content/</loc>
+    <loc>http://www.example.com/templates/more-rich-content/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/more-rich-content/</loc>
-    <lastmod>2023-07-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/math-typesetting/</loc>
+    <loc>http://www.example.com/templates/math-typesetting/</loc>
     <lastmod>2023-07-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/math-typesetting/</loc>
-    <lastmod>2023-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/html-and-css-only-tabs/</loc>
+    <loc>http://www.example.com/templates/html-and-css-only-tabs/</loc>
     <lastmod>2023-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/html-and-css-only-tabs/</loc>
-    <lastmod>2023-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/mermaid-support/</loc>
+    <loc>http://www.example.com/templates/mermaid-support/</loc>
     <lastmod>2023-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/mermaid-support/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/tags/emoji/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/emoji-support/</loc>
-    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/hugo-coder-wiki/</loc>
+    <loc>http://www.example.com/templates/hugo-coder-wiki/</loc>
     <lastmod>2023-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/hugo-coder-wiki/</loc>
-    <lastmod>2023-07-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/interns/placeholder-text/</loc>
-    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%E5%A4%B9-11.08.26/placeholder-text/</loc>
+    <loc>http://www.example.com/templates/placeholder-text/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/tags/text/</loc>
     <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/interns/bayer/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/interns/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/projects/gradient/</loc>
+    <lastmod>2023-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/interns/bjrobot-/</loc>
+    <lastmod>2023-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
@@ -234,6 +213,9 @@
     <lastmod>2022-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/competitions/</loc>
+    <lastmod>2021-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/tags/emoji/</loc>
     <lastmod>2021-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/competitions/robomaster/</loc>
