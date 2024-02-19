@@ -165,7 +165,21 @@
       </h1>
     </header>
 
-    <div style="columns: 2;">
+    <style>
+    .columns-container {
+        column-count: 2; /* 指定两列 */
+        column-gap: 20px; /* 列间距 */
+    }
+    .column1 {
+        float: left; /* 左浮动 */
+        /* width: 50%; 宽度50% */
+    }
+    .column2 {
+        float: right; /* 右浮动 */
+        /* width: 50%; 宽度50% */
+    }
+</style>
+<div style="columns: 2;">
 <br></br>
 <blockquote>
 <p>&ldquo;The point of inventing is to make things that don&rsquo;t exist.&rdquo;      &mdash; &mdash; Rick Sanchez
@@ -175,8 +189,9 @@
 </div>
 <p>Hi there, I am Xiaotong Li. Currently I am a Master student in Robotics at TU Delft, the Netherlands. Before this, I completed my BEng in Nanjing University of Aeronautics and Astronautics. I prefer to seek PhD opportunity after my Master study. You can email me at <a href="mailto:xiaotongli@tudelft.nl" >xiaotongli@tudelft.nl</a>.</p>
 <p>My CV is available <a href="../uploads/cv.pdf" >here</a>.</p>
-<div style="columns: 2;">
-<p>Here are my education experience:</p>
+<div class="columns-container">
+    <div class="column1">
+  Here are my education experience:
 <ul>
 <li>
 <p><strong>MSc in Robotics, 2023 ~ 2025</strong></p>
@@ -193,17 +208,25 @@ Nanjing University of Aeronautics and Astronautics, China</p>
 <li>
 <p><strong>KAIST Summer School in Robotics, 2022.07</strong>
 Korea Advanced Institute of Science and Technology, South Korea
-<br></br></p>
+</div>
+<div class="column2">
+My research interests include:</p>
+</li>
+<li>
+<p><strong>Robot perception</strong></p>
+</li>
+<li>
+<p><strong>Computer vision</strong></p>
+</li>
+<li>
+<p><strong>Intelligent control</strong></p>
+</li>
+<li>
+<p><strong>Planning and decision making</strong></p>
 </li>
 </ul>
-<p>My research interests include:</p>
-<ul>
-<li><strong>Robot perception</strong></li>
-<li><strong>Computer vision</strong></li>
-<li><strong>Intelligent control</strong></li>
-<li><strong>Planning and decision making</strong>
-<br></br><br></br><br></br><br></br></li>
-</ul>
+<p><br></br>
+</div></p>
 </div>
 
   </article>
