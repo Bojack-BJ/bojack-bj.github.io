@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Gradient Enhanced Neural Networks for Optimization of Mars Low Reynold Number Airfoil · Xiaotong Li
+  Model Predictive Control Approach for Multi-UAVs Planning and Motion Control · Xiaotong Li
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +13,26 @@
 
 
 <meta name="author" content="Xiaotong Li">
-<meta name="description" content="Bachelor Research Program">
+<meta name="description" content="Master Research Program">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Gradient Enhanced Neural Networks for Optimization of Mars Low Reynold Number Airfoil"/>
-<meta name="twitter:description" content="Bachelor Research Program"/>
+<meta name="twitter:title" content="Model Predictive Control Approach for Multi-UAVs Planning and Motion Control"/>
+<meta name="twitter:description" content="Master Research Program"/>
 
-<meta property="og:title" content="Gradient Enhanced Neural Networks for Optimization of Mars Low Reynold Number Airfoil" />
-<meta property="og:description" content="Bachelor Research Program" />
+<meta property="og:title" content="Model Predictive Control Approach for Multi-UAVs Planning and Motion Control" />
+<meta property="og:description" content="Master Research Program" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.example.com/projects/gradient/" /><meta property="article:section" content="projects" />
-<meta property="article:published_time" content="2023-04-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-04-20T00:00:00+00:00" />
-<meta property="og:see_also" content="http://www.example.com/projects/mpc/" /><meta property="og:see_also" content="http://www.example.com/projects/multi-uav/" /><meta property="og:see_also" content="http://www.example.com/interns/bayer/" /><meta property="og:see_also" content="http://www.example.com/interns/bjrobot-/" /><meta property="og:see_also" content="http://www.example.com/projects/dynamic-formation-transformation-and-obstacle-avoidance-of-unmanned-vehicles/" />
+<meta property="og:url" content="http://www.example.com/projects/mpc/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
+<meta property="og:see_also" content="http://www.example.com/projects/multi-uav/" /><meta property="og:see_also" content="http://www.example.com/interns/bayer/" /><meta property="og:see_also" content="http://www.example.com/projects/gradient/" /><meta property="og:see_also" content="http://www.example.com/interns/bjrobot-/" /><meta property="og:see_also" content="http://www.example.com/projects/dynamic-formation-transformation-and-obstacle-avoidance-of-unmanned-vehicles/" />
 
 
 
 
 
-<link rel="canonical" href="http://www.example.com/projects/gradient/">
+<link rel="canonical" href="http://www.example.com/projects/mpc/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -162,34 +162,21 @@
   <article>
     <header>
       <h1 class="title">
-        <a class="title-link" href="http://www.example.com/projects/gradient/">
-          Gradient Enhanced Neural Networks for Optimization of Mars Low Reynold Number Airfoil
+        <a class="title-link" href="http://www.example.com/projects/mpc/">
+          Model Predictive Control Approach for Multi-UAVs Planning and Motion Control
         </a>
       </h1>
     </header>
 
-    <p>The project uses improved gradient-enhanced neural network as a surrogate model instead of CFD simulation calculation to predict the aerodynamic parameters of airfoils. By comparing and testing the traditional neural network, the gradient-enhanced neural network(mSANN) and the improved gradient-enhanced neural network, the superiority of the network in terms of prediction performance and convergence speed is clarified.</p>
-<!-- <div align="center"><img height=auto width=auto src=../../images/gradient1.jpg /></div> -->
+    <div style="text-align:center">
+  <img height=auto width=auto src=../../images/punish.png>
+</div>
 <div style="text-align:center">
-  <img height=auto width=auto src=../../images/gradient1.jpg>
-  <center><span style="font-size: 15px;">Figure 1: The accuracy and convergency of different networks</span> </center>
+  <img height=auto width=auto src=../../images/terminalset_visual.png>
 </div>
-<p>For the preprocessing of data, this paper uses singular value decomposition to parameterize airfoils and decompose airfoils into modes and modal coefficients. The inverse distance-weighted interpolation method is used to construct a constraint function to limit the modal coefficient and exclude abnormal airfoils.</p>
-<div style="text-align:center">
-  <img height=auto width=auto src=../../images/gradient2.jpg>
-  <center><span style="font-size: 15px;">Figure 2: The first five airfoil camber and thickness modes obtained by SVD decomposition of UIUC airfoil database</span> </center>
-</div>
-<p>Latin hypercube sampling was used to generate airfoil samples, and ADflow was used to calculate the aerodynamic parameters and their derivatives. The results are used for the training of the improved gradient-enhanced neural network to obtain a surrogate model for the prediction of the aerodynamics, and the neural network is coupled with the optimization software package for airfoil aerodynamic optimization. Compared with the high-fidelity CFD based optimization method, the optimization results are almost indistinguishable, but the optimization time is greatly reduced.</p>
-<div style="text-align:center">
-  <img height=auto width=auto src=../../images/gradient3.jpg>
-  <center><span style="font-size: 15px;">Figure 3: Grids of airfoils computed by pyHyp</span> </center>
-</div>
-<div class="notice info">
-  <div class="notice-title">
-    <i class="fa-solid fa-exclamation-circle" aria-hidden="true"></i>Info
-  </div>
-  <div class="notice-content">Chinese version paper <a href="../../uploads/paper.pdf" >here</a></div>
-</div>
+<p>We implemented and simulated a Model predictive control (MPC) approach for multi-UAVs control. A state-based MPC approach for signal UAV position control was designed and was used to explore the effect of parameters on the results. Meanwhile, we designed a path-planning method and an output MPC method with trajectory tracking and collision avoidance for multiple UAVs in complex environments. A stability analysis is also performed to prove the stability of the approach. See Github for project details:</p>
+<p><a href="https://github.com/PatrickYang-5/MPC_drones"  class="external-link" target="_blank" rel="noopener">https://github.com/PatrickYang-5/MPC_drones</a></p>
+<p>Paper PDF <a href="../../uploads/mpc.pdf" >here</a></p>
   </article>
 </section>
 

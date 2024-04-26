@@ -6,7 +6,16 @@
     <description>Recent content in Research Project on Xiaotong Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/series/research-project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/series/research-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Model Predictive Control Approach for Multi-UAVs Planning and Motion Control</title>
+      <link>http://www.example.com/projects/mpc/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/projects/mpc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Two-stage Multi-UAV Planning Solution Combining A*, Model Predictive Control, and Artificial Potential Field</title>
       <link>http://www.example.com/projects/multi-uav/</link>

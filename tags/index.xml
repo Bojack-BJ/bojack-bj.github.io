@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Xiaotong Li</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dynamic transformation</title>
-      <link>http://www.example.com/tags/dynamic-transformation/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <title>MPC</title>
+      <link>http://www.example.com/tags/mpc/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/tags/dynamic-transformation/</guid>
+      <guid>http://www.example.com/tags/mpc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Planning</title>
       <link>http://www.example.com/tags/planning/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/tags/planning/</guid>
       <description></description>
@@ -28,9 +28,18 @@
     <item>
       <title>UAV</title>
       <link>http://www.example.com/tags/uav/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/tags/uav/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic transformation</title>
+      <link>http://www.example.com/tags/dynamic-transformation/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/tags/dynamic-transformation/</guid>
       <description></description>
     </item>
     
