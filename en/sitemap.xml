@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://www.example.com/authors/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -15,8 +15,11 @@
                 href="http://www.example.com/authors/"
                 />
   </url><url>
+    <loc>http://www.example.com/projects/thesis/</loc>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.example.com/categories/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -28,26 +31,23 @@
                 href="http://www.example.com/categories/"
                 />
   </url><url>
-    <loc>http://www.example.com/projects/mpc/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://www.example.com/tags/manipulation/</loc>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/tags/mpc/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.example.com/tags/planning/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://www.example.com/tags/open-world/</loc>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/projects/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/series/research-project/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/categories/research-project/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/series/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -60,7 +60,7 @@
                 />
   </url><url>
     <loc>http://www.example.com/tags/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -72,14 +72,14 @@
                 href="http://www.example.com/tags/"
                 />
   </url><url>
-    <loc>http://www.example.com/tags/uav/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <loc>http://www.example.com/tags/world-model/</loc>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/authors/xiaotong-li/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/</loc>
-    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -90,6 +90,18 @@
                 hreflang="en"
                 href="http://www.example.com/"
                 />
+  </url><url>
+    <loc>http://www.example.com/projects/mpc/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/tags/mpc/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/tags/planning/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.example.com/tags/uav/</loc>
+    <lastmod>2024-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.example.com/about/</loc>
     <lastmod>2024-02-16T00:00:00+00:00</lastmod>

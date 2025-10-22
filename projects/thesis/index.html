@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Building Explicit World Model for Open-world Object Manipulation · Xiaotong Li
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xiaotong Li">
+<meta name="description" content="Master thesis">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building Explicit World Model for Open-world Object Manipulation"/>
+<meta name="twitter:description" content="Master thesis"/>
+
+<meta property="og:title" content="Building Explicit World Model for Open-world Object Manipulation" />
+<meta property="og:description" content="Master thesis" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.example.com/projects/thesis/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2025-10-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-10-22T00:00:00+00:00" />
+<meta property="og:see_also" content="http://www.example.com/projects/mpc/" /><meta property="og:see_also" content="http://www.example.com/projects/multi-uav/" /><meta property="og:see_also" content="http://www.example.com/interns/bayer/" /><meta property="og:see_also" content="http://www.example.com/projects/gradient/" /><meta property="og:see_also" content="http://www.example.com/interns/bjrobot-/" />
+
+
+
+
+
+<link rel="canonical" href="http://www.example.com/projects/thesis/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.eff6eda43c09116b3909b2b933bee043653449ef21aa96bc6f1bb86ccf405ef9.css" integrity="sha256-7/btpDwJEWs5CbK5M77gQ2U0Se8hqpa8bxu4bM9AXvk=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.10a77a1787ea7c95135794620cecb28455ca2d27adea9a91b6a42d3dda57298a.css" integrity="sha256-EKd6F4fqfJUTV5RiDOyyhFXKLSet6pqRtqQtPdpXKYo=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Xiaotong Li
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/competitions/">Competitions</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/interns/">Interns</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/pt-br/"></a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://www.example.com/projects/thesis/">
+          Building Explicit World Model for Open-world Object Manipulation
+        </a>
+      </h1>
+    </header>
+
+    <p>Open-world object manipulation has emerged as a popular research frontier in robotics. While recent advances in vision-language-action (VLA) models have achieved impressive results, they typically rely on large amounts of task-specific action data for training. This thesis aims to enable a manipulator to perform open-world object manipulation tasks without any action demonstrations. Instead of learning direct action mappings, we focus on understanding object dynamics.</p>
+<div style="text-align:center">
+  <img height=auto width=auto src=../../images/thesis.png>
+</div>
+<p>To this end, we propose a novel framework that builds an explicit world model for open-world object manipulation. The framework integrates open-set segmentation and grasping, 3D digital twin reconstruction, and simulation-based strategy sampling within a unified framework. At the core of our approach lies the construction of a physically grounded digital twin of the environment, which enables the framework to simulate and evaluate diverse interaction strategies before real-world execution.
+Experimentally, the proposed framework is able to perform multiple open-set manipulation tasks, such as “put the banana into the basket”, “stack the green cube onto the yellow cube”, and “place the blue cup upside on the wooden box”. These results are obtained without any task-specific action demonstrations, demonstrating strong generalization and autonomy compared to existing closed-set or imitation-based systems.</p>
+<figure style="text-align:center">
+  <video style="max-width:90%; height:auto; border-radius:10px;" controls>
+    <source src="../../uploads/thesis-video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style="font-size:0.9em; color:gray;">
+    Real robot executing task of putting the blue cup standing upside on the wooden box.
+  </figcaption>
+</figure>
+<figure style="text-align:center">
+  <video style="max-width:90%; height:auto; border-radius:10px;" controls>
+    <source src="../../uploads/thesis-video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style="font-size:0.9em; color:gray;">
+    Real robot executing task of putting the banana into the basket.
+  </figcaption>
+</figure>
+<!-- https://github.com/PatrickYang-5/MPC_drones
+
+Paper PDF [here](../../uploads/mpc.pdf) -->
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2024 -
+    
+    2025
+     Xiaotong Li 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
