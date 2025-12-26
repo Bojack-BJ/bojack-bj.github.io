@@ -174,24 +174,497 @@
 </div>
 <p>To this end, we propose a novel framework that builds an explicit world model for open-world object manipulation. The framework integrates open-set segmentation and grasping, 3D digital twin reconstruction, and simulation-based strategy sampling within a unified framework. At the core of our approach lies the construction of a physically grounded digital twin of the environment, which enables the framework to simulate and evaluate diverse interaction strategies before real-world execution.
 Experimentally, the proposed framework is able to perform multiple open-set manipulation tasks, such as “put the banana into the basket”, “stack the green cube onto the yellow cube”, and “place the blue cup upside on the wooden box”. These results are obtained without any task-specific action demonstrations, demonstrating strong generalization and autonomy compared to existing closed-set or imitation-based systems.</p>
-<figure style="text-align:center">
-  <video style="max-width:90%; height:auto; border-radius:10px;" controls>
-    <source src="../../uploads/thesis-video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <figcaption style="font-size:0.9em; color:gray;">
-    Real robot executing task of putting the blue cup standing upside on the wooden box.
-  </figcaption>
-</figure>
-<figure style="text-align:center">
-  <video style="max-width:90%; height:auto; border-radius:10px;" controls>
-    <source src="../../uploads/thesis-video2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <figcaption style="font-size:0.9em; color:gray;">
-    Real robot executing task of putting the banana into the basket.
-  </figcaption>
-</figure>
+<p class="project-download">
+  <a class="project-download__link" href="../../uploads/Thesis.pdf" target="_blank" rel="noopener">
+    Download full thesis (PDF)
+  </a>
+</p>
+<div class="video-strip" data-strip>
+  <button class="video-strip__arrow" type="button" aria-label="Scroll left" data-strip-prev>&lsaquo;</button>
+  <div class="video-strip__viewport" data-strip-viewport>
+    <div class="video-strip__track">
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/lemon-cup.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Put lemon into cup</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cube-box.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Place cube on box</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cube-can.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Drop cube into can</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/banana-basket.mp4" type="video/mp4">
+        </video>
+        <figcaption>Banana into basket</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cup-box.mp4" type="video/mp4">
+        </video>
+        <figcaption>Cup on box</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cup2.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Cup upside down</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cultery1.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Cultery between boxes</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cultery2.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Cultery bridge</figcaption>
+      </figure>
+      <figure class="video-strip__card">
+        <video class="video-strip__media" autoplay muted loop playsinline>
+          <source src="../../uploads/cup1.MOV" type="video/quicktime">
+        </video>
+        <figcaption>Cup orientation switch</figcaption>
+      </figure>
+    </div>
+  </div>
+  <button class="video-strip__arrow" type="button" aria-label="Scroll right" data-strip-next>&rsaquo;</button>
+</div>
+<div class="video-carousel" data-carousel>
+  <p class="video-carousel__corner-title">Put an object into a container</p>
+  <div class="video-carousel__viewport" data-carousel-track>
+    <figure class="video-carousel__slide" data-title="Put lemon into cup">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/lemon-cup.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cube into box">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cube-box.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cube into can">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cube-can.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+  <div class="video-carousel__meta">
+    <span class="video-carousel__title" data-carousel-title>Blue Cup</span>
+  </div>
+  <div class="video-carousel__controls">
+    <button class="video-carousel__arrow" type="button" aria-label="Previous video" data-carousel-prev>&larr;</button>
+    <div class="video-carousel__dots" data-carousel-dots></div>
+    <button class="video-carousel__arrow" type="button" aria-label="Next video" data-carousel-next>&rarr;</button>
+  </div>
+</div>
+<div class="video-carousel" data-carousel>
+  <p class="video-carousel__corner-title">Stack objects</p>
+  <div class="video-carousel__viewport" data-carousel-track>
+    <figure class="video-carousel__slide" data-title="Put cup on box">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cup-box.mp4" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cultery on box">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cultery2.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Stack two cubes">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/stack_cube.mp4" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+  <div class="video-carousel__meta">
+    <span class="video-carousel__title" data-carousel-title>Blue Cup</span>
+  </div>
+  <div class="video-carousel__controls">
+    <button class="video-carousel__arrow" type="button" aria-label="Previous video" data-carousel-prev>&larr;</button>
+    <div class="video-carousel__dots" data-carousel-dots></div>
+    <button class="video-carousel__arrow" type="button" aria-label="Next video" data-carousel-next>&rarr;</button>
+  </div>
+</div>
+<div class="video-carousel" data-carousel>
+  <p class="video-carousel__corner-title">Fine instruction understanding</p>
+  <div class="video-carousel__viewport" data-carousel-track>
+    <figure class="video-carousel__slide" data-title="Put cup upside on box">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cup2.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cup upside down on box">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cup1.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cultery between boxes">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cultery1.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+    <figure class="video-carousel__slide" data-title="Put cultery on boxes like a bridge">
+      <video class="video-carousel__media" controls>
+        <source src="../../uploads/cultery2.MOV" type="video/quicktime">
+        Your browser does not support the video tag.
+      </video>
+    </figure>
+  </div>
+  <div class="video-carousel__meta">
+    <span class="video-carousel__title" data-carousel-title>Blue Cup</span>
+  </div>
+  <div class="video-carousel__controls">
+    <button class="video-carousel__arrow" type="button" aria-label="Previous video" data-carousel-prev>&larr;</button>
+    <div class="video-carousel__dots" data-carousel-dots></div>
+    <button class="video-carousel__arrow" type="button" aria-label="Next video" data-carousel-next>&rarr;</button>
+  </div>
+</div>
+<style>
+.video-strip {
+  margin: 2.5rem auto 0;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.video-strip__viewport {
+  overflow: hidden;
+  flex: 1;
+}
+
+.video-strip__track {
+  display: flex;
+  gap: 0.85rem;
+  padding: 0.25rem 0;
+}
+
+.video-strip__card {
+  flex: 0 0 220px;
+  margin: 0;
+  border-radius: 14px;
+  background: rgba(16, 21, 46, 0.65);
+  padding: 0.65rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  color: #f8fbff;
+  text-align: center;
+}
+
+.video-strip__media {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  background: #05060f;
+}
+
+.video-strip__card figcaption {
+  font-size: 0.8rem;
+}
+
+.video-strip__arrow {
+  border: none;
+  background: rgba(20, 26, 51, 0.85);
+  color: #f6f7fb;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.video-strip__arrow:hover {
+  transform: translateY(-2px);
+}
+
+.video-strip__arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.project-download {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+.project-download__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #1e2969ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-download__link:hover {
+  background: rgba(30, 41, 105, 0.08);
+  transform: translateY(-1px);
+}
+
+.video-carousel {
+  margin: 2rem auto;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.video-carousel__corner-title {
+  /* align-self: flex-end; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 2.15rem;
+  font-weight: 600;
+  color: #1e2969ff;
+  /* text-transform: none; */
+  text-align: center;
+}
+
+.video-carousel__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  color: #010101ff;
+  text-align: center;
+}
+
+.video-carousel__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.video-carousel__viewport {
+  display: flex;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.video-carousel__slide {
+  flex: 0 0 100%;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.video-carousel__media {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.video-carousel__slide figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9em;
+  color: #9ea3b4;
+}
+
+.video-carousel__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.video-carousel__arrow {
+  border: none;
+  background: #33384a;
+  color: #f6f7fb;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.video-carousel__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.video-carousel__arrow:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+.video-carousel__dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.video-carousel__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.video-carousel__dot.is-active {
+  background: #7cb7ff;
+  transform: scale(1.2);
+}
+
+@media (min-width: 960px) {
+  .video-carousel__slide {
+    padding: 1.5rem 2rem;
+  }
+}
+</style>
+<script>
+(function () {
+  const carousels = document.querySelectorAll('[data-carousel]');
+  carousels.forEach((carousel) => {
+    const track = carousel.querySelector('[data-carousel-track]');
+    const slides = Array.from(track.children);
+    const prev = carousel.querySelector('[data-carousel-prev]');
+    const next = carousel.querySelector('[data-carousel-next]');
+    const dotsContainer = carousel.querySelector('[data-carousel-dots]');
+    const titleEl = carousel.querySelector('[data-carousel-title]');
+    const slideCount = slides.length;
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'video-carousel__dot';
+      dot.setAttribute('aria-label', `Go to video ${index + 1}`);
+      dotsContainer?.appendChild(dot);
+    });
+    const dots = dotsContainer ? Array.from(dotsContainer.children) : [];
+
+    const clamp = (value) => Math.min(Math.max(value, 0), slideCount - 1);
+    let currentIndex = 0;
+
+    const goTo = (index) => {
+      const clampedIndex = clamp(index);
+      currentIndex = clampedIndex;
+      const offset = clampedIndex * track.clientWidth;
+      track.scrollTo({ left: offset, behavior: 'smooth' });
+      prev.disabled = clampedIndex === 0;
+      next.disabled = clampedIndex === slideCount - 1;
+      if (titleEl) {
+        titleEl.textContent = slides[clampedIndex]?.dataset.title || '';
+      }
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('is-active', dotIndex === clampedIndex);
+      });
+    };
+
+    prev.addEventListener('click', () => goTo(currentIndex - 1));
+    next.addEventListener('click', () => goTo(currentIndex + 1));
+    window.addEventListener('resize', () => goTo(currentIndex));
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => goTo(index));
+    });
+
+    goTo(0);
+  });
+
+  const strips = document.querySelectorAll('[data-strip]');
+  strips.forEach((strip) => {
+    const viewport = strip.querySelector('[data-strip-viewport]');
+    const track = strip.querySelector('.video-strip__track');
+    const prev = strip.querySelector('[data-strip-prev]');
+    const next = strip.querySelector('[data-strip-next]');
+    if (!viewport || !track) {
+      return;
+    }
+
+    const originalCards = Array.from(track.children);
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    const scrollChunk = () => Math.max(viewport.clientWidth * 0.6, 160);
+    const scrollBy = (delta) => viewport.scrollBy({ left: delta, behavior: 'smooth' });
+
+    prev?.addEventListener('click', () => scrollBy(-scrollChunk()));
+    next?.addEventListener('click', () => scrollBy(scrollChunk()));
+
+    const maxScroll = () => track.scrollWidth / 2;
+    let animationId;
+    let last;
+    const speed = 0.08;
+
+    const animate = (timestamp) => {
+      if (last !== undefined) {
+        const delta = timestamp - last;
+        viewport.scrollLeft += delta * speed;
+        if (viewport.scrollLeft >= maxScroll()) {
+          viewport.scrollLeft -= maxScroll();
+        }
+      }
+      last = timestamp;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    const pause = () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+        animationId = undefined;
+      }
+      last = undefined;
+    };
+
+    const play = () => {
+      if (!animationId) {
+        animationId = requestAnimationFrame(animate);
+      }
+    };
+
+    [viewport, prev, next].forEach((el) => {
+      el?.addEventListener('mouseenter', pause);
+      el?.addEventListener('mouseleave', play);
+    });
+
+    play();
+  });
+})();
+</script>
 <!-- https://github.com/PatrickYang-5/MPC_drones
 
 Paper PDF [here](../../uploads/mpc.pdf) -->
