@@ -19,8 +19,8 @@ description: Robotics researcher working on open-world manipulation, world model
   <div class="home-content">
     <section class="intro-section">
       <h2>About</h2>
-      <p>I am completing my MSc in Robotics at Delft University of Technology. My research focuses on robot systems that understand object dynamics, reason about physical interaction, and generalize to open-world manipulation tasks.</p>
-      <p>I am seeking PhD opportunities in robotics, especially around world models, open-world manipulation, and embodied autonomy.</p>
+      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. My research focuses on robot systems that understand physical world and generalize to open-world manipulation tasks.</p>
+      <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
     </section>
 
     <section>
@@ -36,12 +36,10 @@ description: Robotics researcher working on open-world manipulation, world model
       <h2>Education</h2>
       <div class="timeline">
         <div>
-          <span>2023-2025</span>
-          <p><strong>MSc Robotics</strong>, Delft University of Technology</p>
+          <span>2023-2025:</span> <p><strong>MSc Robotics</strong>, Delft University of Technology</p>
         </div>
         <div>
-          <span>2019-2023</span>
-          <p><strong>BEng Aircraft Design and Engineering</strong>, Nanjing University of Aeronautics and Astronautics</p>
+          <span>2019-2023:</span> <p><strong>BEng Aircraft Design and Engineering</strong>, Nanjing University of Aeronautics and Astronautics</p>
         </div>
       </div>
     </section>
