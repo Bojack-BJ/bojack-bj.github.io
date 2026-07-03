@@ -6,6 +6,7 @@ tags:
   - UAV
   - Planning
   - MPC
+thumbnail: /images/sankey-diagram.png
 links:
   - label: Paper PDF
     url: /uploads/PDM.pdf

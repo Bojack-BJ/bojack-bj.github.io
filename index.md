@@ -19,7 +19,7 @@ description: Robotics researcher working on open-world manipulation, world model
   <div class="home-content">
     <section id="about" class="intro-section">
       <h2>About</h2>
-      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. More broadly, I am interested in physical world models, open-world object manipulation, robot planning and control, and autonomous systems that can understand and interact with the physical world.</p>
+      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. More broadly, I am interested in physical world models, open-world manipulation, and robot learning that can understand and interact with the physical world.</p>
       <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
     </section>
 
@@ -28,15 +28,15 @@ description: Robotics researcher working on open-world manipulation, world model
       <div class="timeline education-list">
         <div>
           <span>2023-2025</span>
-          <p><strong>MSc Robotics</strong>, Delft University of Technology<br><em>GPA: 8.41/10.0</em></p>
+          <p><strong>MSc Robotics, Delft University of Technology</strong></p>
         </div>
         <div>
           <span>2019-2023</span>
-          <p><strong>BEng Aircraft Design and Engineering</strong>, Nanjing University of Aeronautics and Astronautics<br><em>GPA: 89/100</em></p>
+          <p><strong>BEng Aircraft Design and Engineering, Nanjing University of Aeronautics and Astronautics</strong></p>
         </div>
         <div>
-          <span>2022</span>
-          <p><strong>Robotics Summer School</strong>, Korea Advanced Institute of Science & Technology (KAIST)</p>
+          <span>2022 Jul</span>
+          <p><strong>Robotics Summer School, Korea Advanced Institute of Science & Technology (KAIST)</strong></p>
         </div>
       </div>
     </section>
@@ -47,9 +47,16 @@ description: Robotics researcher working on open-world manipulation, world model
       <div class="project-list">
         {% for project in projects %}
           <article class="project-item">
-            <div class="project-year">{{ project.date | date: "%Y" }}</div>
+            <a class="project-thumb" href="{{ project.url }}" aria-label="{{ project.title }}">
+              {% if project.thumbnail %}
+                <img src="{{ project.thumbnail }}" alt="">
+              {% else %}
+                <span>{{ project.date | date: "%Y" }}</span>
+              {% endif %}
+            </a>
             <div class="project-body">
               <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+              <p class="project-meta-line">{{ project.date | date: "%Y" }}{% if project.tags %} · {{ project.tags | join: " / " }}{% endif %}</p>
               <p>{{ project.summary }}</p>
               <div class="project-link-row">
                 <a href="{{ project.url }}">Project</a>

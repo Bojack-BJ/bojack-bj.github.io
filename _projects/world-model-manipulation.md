@@ -6,6 +6,7 @@ tags:
   - Open-world manipulation
   - World model
   - Robotics
+thumbnail: /images/thesis.png
 links:
   - label: Thesis PDF
     url: /uploads/Thesis.pdf

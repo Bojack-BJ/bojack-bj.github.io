@@ -6,6 +6,7 @@ tags:
   - ROS
   - Navigation
   - Autonomous vehicles
+thumbnail: /images/smartcar.png
 ---
 
 <video class="wide-video" controls src="/uploads/smartcar.mp4"></video>

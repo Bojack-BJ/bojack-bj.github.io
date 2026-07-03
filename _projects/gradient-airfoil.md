@@ -6,6 +6,7 @@ tags:
   - Optimization
   - Surrogate model
   - Aerodynamics
+thumbnail: /images/gradient1.jpg
 links:
   - label: Chinese Paper PDF
     url: /uploads/paper.pdf
