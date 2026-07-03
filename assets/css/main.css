@@ -335,6 +335,14 @@ video {
   margin-top: 4px;
 }
 
+.project-main-video {
+  display: block;
+  width: 100%;
+  margin: 0 auto 26px;
+  border-radius: 3px;
+  background: #111827;
+}
+
 .video-strip {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));

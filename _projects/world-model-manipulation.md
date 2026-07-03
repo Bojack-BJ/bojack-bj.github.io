@@ -11,6 +11,8 @@ links:
     url: /uploads/Thesis.pdf
 ---
 
+<video class="project-main-video" controls playsinline poster="/images/thesis.png" src="/uploads/thesis.mp4"></video>
+
 <div class="video-strip">
   <video autoplay muted loop playsinline src="/uploads/lemon-cup.MOV"></video>
   <video autoplay muted loop playsinline src="/uploads/cube-box.MOV"></video>
