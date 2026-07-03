@@ -10,9 +10,22 @@ description: Robotics researcher working on open-world manipulation, world model
     <h1>Xiaotong Li</h1>
     <p>Robotics researcher interested in world models, VLA models, and robot learning.</p>
     <div class="profile-links">
-      <a href="/uploads/cv.pdf">CV</a>
-      <a href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">GitHub</a>
-      <a href="/#contact">Email</a>
+      <a class="profile-link" href="/uploads/cv.pdf">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path><path d="M14 2v5h5"></path><path d="M9 13h6"></path><path d="M9 17h6"></path><path d="M9 9h1"></path></svg>
+        <span>CV</span>
+      </a>
+      <a class="profile-link" href="/#contact">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="m22 6-10 7L2 6"></path></svg>
+        <span>Email</span>
+      </a>
+      <a class="profile-link" href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3"></path><path d="M15 22v-3.9a3.4 3.4 0 0 0-1-2.6c3.3-.4 6.8-1.6 6.8-7.2a5.6 5.6 0 0 0-1.5-3.9 5.2 5.2 0 0 0-.1-3.9s-1.2-.4-4 1.5a13.8 13.8 0 0 0-7.2 0C5.2-.9 4-.5 4-.5a5.2 5.2 0 0 0-.1 3.9 5.6 5.6 0 0 0-1.5 3.9c0 5.6 3.5 6.8 6.8 7.2a3.4 3.4 0 0 0-1 2.6V22"></path></svg>
+        <span>GitHub</span>
+      </a>
+      <a class="profile-link" href="https://www.linkedin.com/in/xiaotong-li-5635902a3" target="_blank" rel="noopener">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><path d="M2 9h4v12H2z"></path><path d="M4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"></path></svg>
+        <span>LinkedIn</span>
+      </a>
     </div>
   </aside>
 
