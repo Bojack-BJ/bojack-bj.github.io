@@ -134,23 +134,6 @@ video {
   max-width: 820px;
 }
 
-.home-two-col {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 32px;
-  margin-top: 28px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-
-.home-two-col section + section {
-  margin-top: 0;
-}
-
-.home-two-col + section {
-  margin-top: 30px;
-}
-
 .contact-section {
   padding-top: 18px;
   border-top: 1px solid var(--line);
@@ -190,13 +173,13 @@ video {
 
 .timeline {
   display: grid;
-  gap: 10px;
+  gap: 11px;
 }
 
 .timeline div {
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 18px;
   align-items: start;
 }
 
@@ -212,10 +195,79 @@ video {
   margin: 0;
 }
 
+.timeline em {
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.92rem;
+}
+
 .publication-list,
 .card-list {
   display: grid;
   gap: 18px;
+}
+
+.project-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-year {
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding-top: 2px;
+}
+
+.project-body h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.project-body p {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.project-link-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.project-link-row a {
+  font-weight: 600;
+}
+
+.experience-list {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 30px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.award-grid h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
 }
 
 .project-grid {
@@ -466,8 +518,8 @@ video {
     width: 190px;
   }
 
-  .home-two-col,
-  .project-grid {
+  .project-grid,
+  .award-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -476,7 +528,8 @@ video {
   .site-header,
   .home-grid,
   .timeline div,
-  .publication-item {
+  .publication-item,
+  .project-item {
     display: block;
   }
 
@@ -505,7 +558,8 @@ video {
 
   .video-strip,
   .media-grid,
-  .project-grid {
+  .project-grid,
+  .award-grid {
     grid-template-columns: 1fr;
   }
 

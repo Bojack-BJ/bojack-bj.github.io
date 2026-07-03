@@ -19,64 +19,90 @@ description: Robotics researcher working on open-world manipulation, world model
   <div class="home-content">
     <section id="about" class="intro-section">
       <h2>About</h2>
-      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. My research focuses on robot systems that understand physical world and generalize to open-world manipulation tasks.</p>
+      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. More broadly, I am interested in physical world models, open-world object manipulation, robot planning and control, and autonomous systems that can understand and interact with the physical world.</p>
       <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
     </section>
 
-    <div class="home-two-col">
-      <section>
-        <h2>Education</h2>
-        <div class="timeline">
-          <div>
-            <span>2023-2025</span>
-            <p><strong>MSc Robotics</strong><br>Delft University of Technology</p>
-          </div>
-          <div>
-            <span>2019-2023</span>
-            <p><strong>BEng Aircraft Design and Engineering</strong><br>Nanjing University of Aeronautics and Astronautics</p>
-          </div>
+    <section class="education-section">
+      <h2>Education</h2>
+      <div class="timeline education-list">
+        <div>
+          <span>2023-2025</span>
+          <p><strong>MSc Robotics</strong>, Delft University of Technology<br><em>GPA: 8.41/10.0</em></p>
         </div>
-      </section>
-
-      <section>
-        <h2>Research Interests</h2>
-        <ul class="compact-list">
-          <li>World models for robotic manipulation</li>
-          <li>Open-world object manipulation</li>
-          <li>Robot planning, control, and autonomous systems</li>
-        </ul>
-      </section>
-    </div>
+        <div>
+          <span>2019-2023</span>
+          <p><strong>BEng Aircraft Design and Engineering</strong>, Nanjing University of Aeronautics and Astronautics<br><em>GPA: 89/100</em></p>
+        </div>
+        <div>
+          <span>2022</span>
+          <p><strong>Robotics Summer School</strong>, Korea Advanced Institute of Science & Technology (KAIST)</p>
+        </div>
+      </div>
+    </section>
 
     <section id="projects">
       <h2>Selected Projects</h2>
       {% assign projects = site.projects | sort: "date" | reverse %}
-      <div class="publication-list project-grid">
+      <div class="project-list">
         {% for project in projects %}
-          <a class="publication-item" href="{{ project.url }}">
-            <span>{{ project.date | date: "%Y" }}</span>
-            <div>
-              <h3>{{ project.title }}</h3>
+          <article class="project-item">
+            <div class="project-year">{{ project.date | date: "%Y" }}</div>
+            <div class="project-body">
+              <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
               <p>{{ project.summary }}</p>
+              <div class="project-link-row">
+                <a href="{{ project.url }}">Project</a>
+                {% for link in project.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                {% endfor %}
+              </div>
             </div>
-          </a>
+          </article>
         {% endfor %}
       </div>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      {% assign experiences = site.experience | sort: "date" | reverse %}
-      <div class="publication-list project-grid">
-        {% for item in experiences %}
-          <a class="publication-item" href="{{ item.url }}">
-            <span>{{ item.date | date: "%Y" }}</span>
-            <div>
-              <h3>{{ item.title }}</h3>
-              <p>{{ item.category }} · {{ item.summary }}</p>
-            </div>
-          </a>
-        {% endfor %}
+      <h2>Internships</h2>
+      <div class="timeline experience-list">
+        <div>
+          <span>2025-now</span>
+          <p><strong>Embodied AI Engineer</strong>, Lumos Robotics, Suzhou<br>Designed data collection pipelines based on FastUMI and developed VLA algorithms for real-robot manipulation and long-horizon tasks.</p>
+        </div>
+        <div>
+          <span>2024</span>
+          <p><strong>Research Intern</strong>, TU Delft Autonomous Multi-Robots Lab, Delft<br>Worked on real-time point cloud completion for robots using Transformer-based completion and category-level object pose estimation.</p>
+        </div>
+        <div>
+          <span>2023</span>
+          <p><strong>ROS Engineer</strong>, Bayer Crop Science, Shanghai<br>Built an Isaac Sim digital twin platform for agricultural robot algorithm iteration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <div class="award-grid">
+        <div>
+          <h3>Competitions</h3>
+          <ul class="compact-list">
+            <li>RoboMaster 2021 National, third prize</li>
+            <li>RoboMaster 2021 Central Division, second prize</li>
+            <li>RoboCup China Open 3D Detection, third prize</li>
+            <li>RoboCup China Open Medical Robots Track, third prize</li>
+            <li>Jiangsu Provincial Engineering Training Competition, second prize</li>
+            <li>RoboMaster 2020 Online, second prize</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Academic Honors</h3>
+          <ul class="compact-list">
+            <li>First-Class Academic Scholarship, 3 times</li>
+            <li>Second-Class Excellent Student Scholarship, 2 times</li>
+            <li>Merit Student Honor, 2 times</li>
+          </ul>
+        </div>
       </div>
     </section>
 
