@@ -59,8 +59,9 @@ description: Robotics researcher working on open-world manipulation, world model
       {% assign projects = site.projects | sort: "date" | reverse %}
       <div class="project-list">
         {% for project in projects %}
+          {% assign project_target = project.external_url | default: project.url %}
           <article class="project-item">
-            <a class="project-thumb" href="{{ project.url }}" aria-label="{{ project.title }}">
+            <a class="project-thumb" href="{{ project_target }}" aria-label="{{ project.title }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>
               {% if project.thumbnail %}
                 <img src="{{ project.thumbnail }}" alt="">
               {% else %}
@@ -68,11 +69,11 @@ description: Robotics researcher working on open-world manipulation, world model
               {% endif %}
             </a>
             <div class="project-body">
-              <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+              <h3><a href="{{ project_target }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>{{ project.title }}</a></h3>
               <p class="project-meta-line">{{ project.date | date: "%Y" }}{% if project.tags %} · {{ project.tags | join: " / " }}{% endif %}</p>
               <p>{{ project.summary }}</p>
               <div class="project-link-row">
-                <a href="{{ project.url }}">Project Page</a>
+                <a href="{{ project_target }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>Project Page</a>
                 {% for link in project.links %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
                 {% endfor %}

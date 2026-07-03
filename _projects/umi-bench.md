@@ -7,9 +7,8 @@ tags:
   - UMI
   - Benchmark
 thumbnail: https://umibenchmark.github.io/assets/images/main-figure.jpg
+external_url: https://umibenchmark.github.io/
 links:
-  - label: Project Page
-    url: https://umibenchmark.github.io/
   - label: Paper
     url: https://arxiv.org/abs/2606.10382
   - label: Dataset
