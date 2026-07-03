@@ -25,15 +25,6 @@ description: Robotics researcher working on open-world manipulation, world model
 
     <div class="home-two-col">
       <section>
-        <h2>Research Interests</h2>
-        <ul class="compact-list">
-          <li>World models for robotic manipulation</li>
-          <li>Open-world object manipulation</li>
-          <li>Robot planning, control, and autonomous systems</li>
-        </ul>
-      </section>
-
-      <section>
         <h2>Education</h2>
         <div class="timeline">
           <div>
@@ -45,6 +36,15 @@ description: Robotics researcher working on open-world manipulation, world model
             <p><strong>BEng Aircraft Design and Engineering</strong><br>Nanjing University of Aeronautics and Astronautics</p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2>Research Interests</h2>
+        <ul class="compact-list">
+          <li>World models for robotic manipulation</li>
+          <li>Open-world object manipulation</li>
+          <li>Robot planning, control, and autonomous systems</li>
+        </ul>
       </section>
     </div>
 
