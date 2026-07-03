@@ -1,0 +1,44 @@
+title: Xiaotong Li
+description: Robotics researcher working on open-world manipulation, world models, and robot autonomy.
+url: "https://bojack-bj.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+
+author:
+  name: Xiaotong Li
+  email: ""
+  github: Bojack-BJ
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  experience:
+    output: true
+    permalink: /experience/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: experience
+    values:
+      layout: page
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

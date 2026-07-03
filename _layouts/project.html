@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="content-page project-page">
+  <header class="page-heading">
+    <p class="eyebrow">{{ page.date | date: "%B %Y" }}{% if page.tags %} · {{ page.tags | join: " / " }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}
+      <p class="lede">{{ page.summary }}</p>
+    {% endif %}
+    {% if page.links %}
+      <div class="link-row">
+        {% for link in page.links %}
+          <a class="button" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

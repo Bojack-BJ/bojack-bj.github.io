@@ -1,6 +1,11 @@
-.idea
-**/themes/
-exampleSite/public/
-exampleSite/resources/
+.idea/
+.DS_Store
+**/.DS_Store
+
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+
 *.lock
-public
