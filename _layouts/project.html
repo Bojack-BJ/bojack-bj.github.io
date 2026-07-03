@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<article class="content-page project-page">
-  <header class="page-heading">
-    <p class="eyebrow">{{ page.date | date: "%B %Y" }}{% if page.tags %} · {{ page.tags | join: " / " }}{% endif %}</p>
+<article class="project-page">
+  <header class="project-hero">
     <h1>{{ page.title }}</h1>
     {% if page.summary %}
-      <p class="lede">{{ page.summary }}</p>
+      <p class="project-subtitle">{{ page.summary }}</p>
     {% endif %}
+    <p class="project-meta">{{ page.date | date: "%B %Y" }}{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</p>
     {% if page.links %}
-      <div class="link-row">
+      <div class="project-links">
         {% for link in page.links %}
           <a class="button" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
         {% endfor %}
