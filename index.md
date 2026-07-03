@@ -8,7 +8,7 @@ description: Robotics researcher working on open-world manipulation, world model
   <aside class="profile-panel">
     <img class="portrait" src="/images/avatar.jpg" alt="Portrait of Xiaotong Li">
     <h1>Xiaotong Li</h1>
-    <p>Robotics researcher interested in world models, open-world manipulation, and autonomous robot systems.</p>
+    <p>Robotics researcher interested in world models, VLA models, and robot learning.</p>
     <div class="profile-links">
       <a href="/uploads/cv.pdf">CV</a>
       <a href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">GitHub</a>
@@ -19,7 +19,7 @@ description: Robotics researcher working on open-world manipulation, world model
   <div class="home-content">
     <section id="about" class="intro-section">
       <h2>About</h2>
-      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. More broadly, I am interested in physical world models, open-world manipulation, and robot learning that can understand and interact with the physical world.</p>
+      <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. More broadly, I am interested in physical world models, VLA models, and robot learning that can understand and interact with the physical world.</p>
       <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
     </section>
 
@@ -27,15 +27,15 @@ description: Robotics researcher working on open-world manipulation, world model
       <h2>Education</h2>
       <div class="timeline education-list">
         <div>
-          <span>2023-2025</span>
+          <span>2023/09-2025/10</span>
           <p><strong>MSc Robotics, Delft University of Technology</strong></p>
         </div>
         <div>
-          <span>2019-2023</span>
+          <span>2019/09-2023/06</span>
           <p><strong>BEng Aircraft Design and Engineering, Nanjing University of Aeronautics and Astronautics</strong></p>
         </div>
         <div>
-          <span>2022 Jul</span>
+          <span>2022/07</span>
           <p><strong>Robotics Summer School, Korea Advanced Institute of Science & Technology (KAIST)</strong></p>
         </div>
       </div>
@@ -59,7 +59,7 @@ description: Robotics researcher working on open-world manipulation, world model
               <p class="project-meta-line">{{ project.date | date: "%Y" }}{% if project.tags %} · {{ project.tags | join: " / " }}{% endif %}</p>
               <p>{{ project.summary }}</p>
               <div class="project-link-row">
-                <a href="{{ project.url }}">Project</a>
+                <a href="{{ project.url }}">Project Page</a>
                 {% for link in project.links %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
                 {% endfor %}
@@ -71,19 +71,19 @@ description: Robotics researcher working on open-world manipulation, world model
     </section>
 
     <section id="experience">
-      <h2>Internships</h2>
+      <h2>Working Experience and Internships</h2>
       <div class="timeline experience-list">
         <div>
-          <span>2025-now</span>
-          <p><strong>Embodied AI Engineer</strong>, Lumos Robotics, Suzhou<br>Designed data collection pipelines based on FastUMI and developed VLA algorithms for real-robot manipulation and long-horizon tasks.</p>
+          <span>2025/12-now</span>
+          <p><strong>Embodied AI Researcher</strong>, Lumos Robotics, Suzhou</p>
         </div>
         <div>
-          <span>2024</span>
-          <p><strong>Research Intern</strong>, TU Delft Autonomous Multi-Robots Lab, Delft<br>Worked on real-time point cloud completion for robots using Transformer-based completion and category-level object pose estimation.</p>
+          <span>2024/08-2024/12</span>
+          <p><strong>Research Intern</strong>, TU Delft Autonomous Multi-Robots Lab, Delft</p>
         </div>
         <div>
-          <span>2023</span>
-          <p><strong>ROS Engineer</strong>, Bayer Crop Science, Shanghai<br>Built an Isaac Sim digital twin platform for agricultural robot algorithm iteration.</p>
+          <span>2023/07-2023/08</span>
+          <p><strong>ROS Engineer</strong>, Bayer Crop Science, Shanghai</p>
         </div>
       </div>
     </section>

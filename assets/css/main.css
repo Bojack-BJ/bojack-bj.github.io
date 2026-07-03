@@ -178,7 +178,7 @@ video {
 
 .timeline div {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
+  grid-template-columns: 115px minmax(0, 1fr);
   gap: 12px;
   align-items: start;
 }

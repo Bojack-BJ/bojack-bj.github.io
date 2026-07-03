@@ -8,8 +8,10 @@ tags:
   - Robotics
 thumbnail: /images/thesis.png
 links:
-  - label: Thesis PDF
-    url: /uploads/Thesis.pdf
+  # - label: Thesis PDF
+  #   url: /uploads/Thesis.pdf
+  - label: Arxiv
+    url: https://arxiv.org/abs/2603.13825
 ---
 
 <video class="project-main-video" controls playsinline poster="/images/thesis.png" src="/uploads/thesis.mp4"></video>

@@ -10,7 +10,7 @@ thumbnail: /images/terminalset_visual.png
 links:
   - label: GitHub
     url: https://github.com/PatrickYang-5/MPC_drones
-  - label: Paper PDF
+  - label: Report PDF
     url: /uploads/mpc.pdf
 ---
 
