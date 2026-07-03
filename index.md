@@ -12,12 +12,12 @@ description: Robotics researcher working on open-world manipulation, world model
     <div class="profile-links">
       <a href="/uploads/cv.pdf">CV</a>
       <a href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">GitHub</a>
-      <a href="/contact/">Email</a>
+      <a href="/#contact">Email</a>
     </div>
   </aside>
 
   <div class="home-content">
-    <section class="intro-section">
+    <section id="about" class="intro-section">
       <h2>About</h2>
       <p>I am currently working as a VLA model researcher at Lumos Robotics, where I focus on robot manipulation and long-horizon tasks. My recent work includes depth-modality integration for VLA models, mask-guided object-centric manipulation, and improving non-Markovian long-horizon task execution through subtask decomposition and high-level memory modules. My research focuses on robot systems that understand physical world and generalize to open-world manipulation tasks.</p>
       <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
@@ -48,11 +48,11 @@ description: Robotics researcher working on open-world manipulation, world model
       </section>
     </div>
 
-    <section>
+    <section id="projects">
       <h2>Selected Projects</h2>
       {% assign projects = site.projects | sort: "date" | reverse %}
       <div class="publication-list project-grid">
-        {% for project in projects limit: 4 %}
+        {% for project in projects %}
           <a class="publication-item" href="{{ project.url }}">
             <span>{{ project.date | date: "%Y" }}</span>
             <div>
@@ -62,6 +62,31 @@ description: Robotics researcher working on open-world manipulation, world model
           </a>
         {% endfor %}
       </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      {% assign experiences = site.experience | sort: "date" | reverse %}
+      <div class="publication-list project-grid">
+        {% for item in experiences %}
+          <a class="publication-item" href="{{ item.url }}">
+            <span>{{ item.date | date: "%Y" }}</span>
+            <div>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.category }} · {{ item.summary }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:xiaotongli0105@gmail.nl">xiaotongli0105@gmail.nl</a>
+        <span class="inline-separator">·</span>
+        GitHub: <a href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">Bojack-BJ</a>
+      </p>
     </section>
   </div>
 </section>
