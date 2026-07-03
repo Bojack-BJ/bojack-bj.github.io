@@ -23,31 +23,35 @@ description: Robotics researcher working on open-world manipulation, world model
       <p>I am seeking PhD opportunities in robotics, especially around physical world models, VLA models, and other related areas.</p>
     </section>
 
-    <section>
-      <h2>Research Interests</h2>
-      <ul class="compact-list">
-        <li>World models for robotic manipulation</li>
-        <li>Open-world object manipulation</li>
-        <li>Robot planning, control, and autonomous systems</li>
-      </ul>
-    </section>
+    <div class="home-two-col">
+      <section>
+        <h2>Research Interests</h2>
+        <ul class="compact-list">
+          <li>World models for robotic manipulation</li>
+          <li>Open-world object manipulation</li>
+          <li>Robot planning, control, and autonomous systems</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <div class="timeline">
-        <div>
-          <span>2023-2025:</span> <p><strong>MSc Robotics</strong>, Delft University of Technology</p>
+      <section>
+        <h2>Education</h2>
+        <div class="timeline">
+          <div>
+            <span>2023-2025</span>
+            <p><strong>MSc Robotics</strong><br>Delft University of Technology</p>
+          </div>
+          <div>
+            <span>2019-2023</span>
+            <p><strong>BEng Aircraft Design and Engineering</strong><br>Nanjing University of Aeronautics and Astronautics</p>
+          </div>
         </div>
-        <div>
-          <span>2019-2023:</span> <p><strong>BEng Aircraft Design and Engineering</strong>, Nanjing University of Aeronautics and Astronautics</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section>
       <h2>Selected Projects</h2>
       {% assign projects = site.projects | sort: "date" | reverse %}
-      <div class="publication-list">
+      <div class="publication-list project-grid">
         {% for project in projects limit: 4 %}
           <a class="publication-item" href="{{ project.url }}">
             <span>{{ project.date | date: "%Y" }}</span>
