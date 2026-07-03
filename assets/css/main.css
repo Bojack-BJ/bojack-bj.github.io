@@ -273,13 +273,27 @@ video {
 
 .project-link-row {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
   font-size: 0.9rem;
 }
 
 .project-link-row a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
   font-weight: 600;
+  line-height: 1.2;
+}
+
+.project-link-row a:hover {
+  background: #eef4ff;
+  border-color: #cbd5e1;
+  text-decoration: none;
 }
 
 .experience-list {
