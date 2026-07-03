@@ -485,6 +485,14 @@ video {
   border-top: 1px solid var(--line);
 }
 
+.prose h1 {
+  text-align: center;
+}
+
+.prose h2 {
+  text-align: center;
+}
+
 .prose img {
   display: block;
   margin: 26px auto;

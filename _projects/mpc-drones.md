@@ -17,6 +17,4 @@ links:
 ![MPC experiment result](/images/punish.png)
 ![Terminal set visualization](/images/terminalset_visual.png)
 
-We implemented and simulated a model predictive control approach for multi-UAV control. A state-based MPC controller for single-UAV position control was first designed and used to study parameter effects. We then developed a path-planning method and output MPC strategy for trajectory tracking and collision avoidance with multiple UAVs in complex environments.
-
-A stability analysis was also performed to reason about controller behavior.
+We implemented and simulated a model predictive control approach for multi-UAV control. A state-based MPC controller for single-UAV position control was first designed and used to study parameter effects. We then developed a path-planning method and output MPC strategy for trajectory tracking and collision avoidance with multiple UAVs in complex environments. A stability analysis was also performed to reason about controller behavior.

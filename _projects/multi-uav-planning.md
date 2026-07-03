@@ -12,10 +12,12 @@ links:
     url: /uploads/PDM.pdf
 ---
 
+This project combined discrete path search, model predictive control, and artificial potential fields for multi-UAV planning and motion control.
+
+
 ## Demonstration
 
 <div class="embed">
   <iframe src="https://www.youtube.com/embed/RkOqEFh1KFM" title="Multi-UAV planning demonstration" allowfullscreen></iframe>
 </div>
 
-This project combined discrete path search, model predictive control, and artificial potential fields for multi-UAV planning and motion control.

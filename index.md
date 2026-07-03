@@ -48,7 +48,7 @@ description: Robotics researcher working on open-world manipulation, world model
           <p><strong>BEng Aircraft Design and Engineering, Nanjing University of Aeronautics and Astronautics</strong></p>
         </div>
         <div>
-          <span>2022/07</span>
+          <span>2022/07-2022/08</span>
           <p><strong>Robotics Summer School, Korea Advanced Institute of Science & Technology (KAIST)</strong></p>
         </div>
       </div>

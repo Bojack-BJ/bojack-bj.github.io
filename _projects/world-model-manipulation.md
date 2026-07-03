@@ -14,7 +14,6 @@ links:
     url: https://arxiv.org/abs/2603.13825
 ---
 
-<video class="project-main-video" controls autoplay muted loop playsinline poster="/images/thesis.png" src="/uploads/thesis.mp4"></video>
 
 <div class="video-strip">
   <video autoplay muted loop playsinline src="/uploads/lemon-cup.MOV"></video>
@@ -26,7 +25,9 @@ links:
 
 # Overview
 
-![System overview](/images/thesis.png)
+<video class="project-main-video" controls autoplay muted loop playsinline poster="/images/thesis.png" src="/uploads/thesis.mp4"></video>
+
+<!-- ![System overview](/images/thesis.png) -->
 
 Open-world object manipulation has emerged as a popular research frontier in robotics. While recent vision-language-action models have achieved impressive results, they typically rely on large amounts of task-specific action data for training. This project explores a different route: enabling a manipulator to perform open-world manipulation tasks by understanding object dynamics rather than imitating action demonstrations.
 
