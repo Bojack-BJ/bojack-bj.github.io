@@ -14,7 +14,7 @@ description: Robotics researcher working on open-world manipulation, world model
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path><path d="M14 2v5h5"></path><path d="M9 13h6"></path><path d="M9 17h6"></path><path d="M9 9h1"></path></svg>
         <span>CV</span>
       </a>
-      <a class="profile-link" href="/#contact">
+      <a class="profile-link" href="mailto:xiaotongli0105@gmail.com">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path><path d="m22 6-10 7L2 6"></path></svg>
         <span>Email</span>
       </a>
@@ -135,7 +135,7 @@ description: Robotics researcher working on open-world manipulation, world model
     <section id="contact" class="contact-section">
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:xiaotongli0105@gmail.nl">xiaotongli0105@gmail.nl</a>
+        Email: <a href="mailto:xiaotongli0105@gmail.com">xiaotongli0105@gmail.com</a>
         <span class="inline-separator">·</span>
         GitHub: <a href="https://github.com/Bojack-BJ" target="_blank" rel="noopener">Bojack-BJ</a>
       </p>
