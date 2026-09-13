@@ -1,6 +1,6 @@
 ---
 title: "Track2Art: Motion-Centric Articulated Object Model Recovery from 2D Point Trackers"
-date: 2026-04-01
+date: 2026-09-01
 summary: Recovering articulated object parts, directed kinematic graphs, joint types, and joint geometry directly from RGB-D interaction videos and persistent point tracks.
 authors:
   - Xiaotong Li
@@ -11,7 +11,8 @@ tags:
   - Articulated object recovery
   - RGB-D
   - Point tracking
-thumbnail: https://track2art.github.io/figures/pipeline.webp
+thumbnail: https://track2art.github.io/figures/overview.webp
+thumbnail_fit: contain
 external_url: https://track2art.github.io/
 links:
   - label: Paper

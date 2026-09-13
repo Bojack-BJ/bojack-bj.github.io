@@ -271,6 +271,12 @@ video {
   object-fit: cover;
 }
 
+.project-thumb img.project-thumb-contain {
+  padding: 4px;
+  object-fit: contain;
+  background: #fff;
+}
+
 .project-year,
 .project-meta-line {
   color: var(--muted);

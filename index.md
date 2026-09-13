@@ -63,7 +63,7 @@ description: Robotics researcher working on open-world manipulation, world model
           <article class="project-item">
             <a class="project-thumb" href="{{ project_target }}" aria-label="{{ project.title }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>
               {% if project.thumbnail %}
-                <img src="{{ project.thumbnail }}" alt="">
+                <img{% if project.thumbnail_fit %} class="project-thumb-{{ project.thumbnail_fit }}"{% endif %} src="{{ project.thumbnail }}" alt="">
               {% else %}
                 <span>{{ project.date | date: "%Y" }}</span>
               {% endif %}
