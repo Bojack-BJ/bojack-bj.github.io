@@ -2,6 +2,10 @@
 title: Building Explicit World Model for Open-world Object Manipulation
 date: 2025-10-01
 summary: A manipulation framework that combines open-set perception, 3D digital twin reconstruction, and simulation-based strategy sampling without task-specific action demonstrations.
+authors:
+  - Xiaotong Li
+  - Gang Chen
+  - Javier Alonso-Mora
 tags:
   - Open-world manipulation
   - World model

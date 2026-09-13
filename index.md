@@ -71,6 +71,11 @@ description: Robotics researcher working on open-world manipulation, world model
             <div class="project-body">
               <h3><a href="{{ project_target }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>{{ project.title }}</a></h3>
               <p class="project-meta-line">{{ project.date | date: "%Y" }}{% if project.tags %} · {{ project.tags | join: " / " }}{% endif %}</p>
+              {% if project.authors %}
+                <p class="project-authors">
+                  {% for author in project.authors %}{% if author == "Xiaotong Li" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+                </p>
+              {% endif %}
               <p>{{ project.summary }}</p>
               <div class="project-link-row">
                 <a href="{{ project_target }}"{% if project.external_url %} target="_blank" rel="noopener"{% endif %}>Project Page</a>
